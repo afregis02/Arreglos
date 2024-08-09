@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones de Arreglos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #c43895;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #b8429e;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Funciones de Arreglos</h1>
+    
+    <div id="arreglo">
+        <h2>Arreglo Inicial:</h2>
+        <p id="arreglo-inicial">[1, 2, 3, 4, 5]</p>
+        <button onclick="popElemento()">Pop</button>
+        <button onclick="shiftElemento()">Shift</button>
+        <button onclick="pushElemento()">Push</button>
+        <button onclick="unshiftElemento()">Unshift</button>
+        <button onclick="spliceElemento()">Splice</button>
+        <button onclick="deleteElemento()">Delete</button>
+        <button onclick="reverseArreglo()">Reverse</button>
+        <button onclick="sortArreglo()">Sort</button>
+        <button onclick="concatArreglo()">Concat</button>
+        <button onclick="joinArreglo()">Join</button>
+        <button onclick="getLength()">Length</button>
+        <div id="resultado" class="hidden"></div>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
